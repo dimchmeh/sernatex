@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина - SERNA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="cart-page">
+    <!-- Sticky Header -->
+    <header class="sticky-header">
+        <div class="header-container">
+            <div class="logo-section">
+                <a href="index.html" class="logo">SERNA</a>
+                <p class="logo-subtitle">текстиль для дома и отдыха</p>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html#about">О компании</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="index.html#payment">Оплата и Доставка</a>
+                <a href="index.html#contacts">Контакты</a>
+            </nav>
+            <div class="header-icons">
+                <a href="account.html" class="icon-link" title="Личный кабинет">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </a>
+                <a href="cart.html" class="icon-link cart-link" title="Корзина">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="cart-counter" id="cart-counter">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cart Content -->
+    <section class="cart-section">
+        <div class="container">
+            <h1 class="cart-title">Корзина</h1>
+            
+            <div class="cart-wrapper" id="cart-wrapper">
+                <!-- Cart Items -->
+                <div class="cart-items" id="cart-items">
+                    <!-- Товары будут загружены динамически -->
+                </div>
+
+                <!-- Cart Summary -->
+                <aside class="cart-summary">
+                    <div class="summary-card">
+                        <h3>Итого</h3>
+                        <div class="summary-row">
+                            <span id="summary-items-count">Товары (0 шт.)</span>
+                            <span id="summary-items-price">0 ₽</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Доставка</span>
+                            <span>Бесплатно</span>
+                        </div>
+                        <div class="summary-divider"></div>
+                        <div class="summary-row total">
+                            <span>К оплате</span>
+                            <span id="cart-total-price">0 ₽</span>
+                        </div>
+                        <button class="btn btn-primary btn-checkout" id="checkout-btn" style="display: none;">Перейти к оплате</button>
+                        <a href="catalog.html" class="continue-shopping">Продолжить покупки</a>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- Empty Cart State (hidden by default) -->
+            <div class="empty-cart" style="display: none;">
+                <div class="empty-cart-icon">
+                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                </div>
+                <h2>Ваша корзина пуста</h2>
+                <p>Добавьте товары из каталога</p>
+                <a href="catalog.html" class="btn btn-primary">Перейти в каталог</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SERNA</h3>
+                    <p class="footer-subtitle">текстиль для дома и отдыха</p>
+                    <p>Качественный текстиль для вашего дома. Создаем уют и комфорт с 2024 года.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Навигация</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#about">О компании</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="index.html#payment">Оплата и Доставка</a></li>
+                        <li><a href="index.html#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Информация</h4>
+                    <ul class="footer-links">
+                        <li><a href="#privacy">Политика конфиденциальности</a></li>
+                        <li><a href="#terms">Условия использования</a></li>
+                        <li><a href="#return">Возврат товара</a></li>
+                        <li><a href="index.html#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p>+7 905 200-44-00</p>
+                    <p>sernatex@rambler.ru</p>
+                    <p>г. Санкт-Петербург</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SERNA. Все права защищены.</p>
+                <p class="footer-legal">Использование материалов сайта возможно только с письменного согласия правообладателя.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
