@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог - SERNA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sticky Header -->
+    <header class="sticky-header">
+        <div class="header-container">
+            <div class="logo-section">
+                <a href="index.html" class="logo">SERNA</a>
+                <p class="logo-subtitle">текстиль для дома и отдыха</p>
+            </div>
+            <nav class="main-nav desktop-nav">
+                <a href="index.html#about">О компании</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="index.html#payment">Оплата и Доставка</a>
+                <a href="index.html#contacts">Контакты</a>
+            </nav>
+            <div class="header-icons">
+                <a href="account.html" class="icon-link" title="Личный кабинет">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </a>
+                <a href="cart.html" class="icon-link cart-link" title="Корзина">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="cart-counter" id="cart-counter">0</span>
+                </a>
+                <button class="burger-menu-btn" id="burger-menu-btn" title="Меню">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <nav class="mobile-menu" id="mobile-menu">
+            <a href="index.html#about">О компании</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="index.html#payment">Оплата и Доставка</a>
+            <a href="index.html#contacts">Контакты</a>
+        </nav>
+    </header>
+
+    <!-- Catalog Page Content -->
+    <div class="catalog-page">
+        <div class="container">
+            <h1 class="page-title">Каталог</h1>
+
+            <!-- Top Menu -->
+            <div class="catalog-menu-top">
+                <ul class="catalog-menu-list">
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Постельное белье</a>
+                        <ul class="submenu">
+                            <li><a href="#">Односпальное</a></li>
+                            <li><a href="#">Двуспальное</a></li>
+                            <li><a href="#">Евро</a></li>
+                            <li><a href="#">Семейное</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Покрывала и пледы</a>
+                        <ul class="submenu">
+                            <li><a href="#">Покрывала</a></li>
+                            <li><a href="#">Пледы</a></li>
+                            <li><a href="#">Наборы</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Полотенца</a>
+                        <ul class="submenu">
+                            <li><a href="#">Банные</a></li>
+                            <li><a href="#">Лицевые</a></li>
+                            <li><a href="#">Для рук</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Шторы и карнизы</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Ковры</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Декор для дома</a>
+                        <ul class="submenu">
+                            <li><a href="#">Подушки</a></li>
+                            <li><a href="#">Скатерти</a></li>
+                            <li><a href="#">Салфетки</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Catalog Layout -->
+            <div class="catalog-layout">
+                <!-- Left Sidebar Menu -->
+                <aside class="catalog-sidebar">
+                    <h3>Категории</h3>
+                    <ul class="catalog-menu-list sidebar-menu">
+                        <li class="menu-item">
+                            <a href="#" class="menu-link" data-category="all">Все товары</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link" data-category="bed-linen">Постельное белье</a>
+                            <ul class="submenu">
+                                <li><a href="#" data-subcategory="single">Односпальное</a></li>
+                                <li><a href="#" data-subcategory="double">Двуспальное</a></li>
+                                <li><a href="#" data-subcategory="euro">Евро</a></li>
+                                <li><a href="#" data-subcategory="family">Семейное</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link" data-category="blankets">Покрывала и пледы</a>
+                            <ul class="submenu">
+                                <li><a href="#" data-subcategory="blankets">Покрывала</a></li>
+                                <li><a href="#" data-subcategory="throws">Пледы</a></li>
+                                <li><a href="#" data-subcategory="sets">Наборы</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link" data-category="towels">Полотенца</a>
+                            <ul class="submenu">
+                                <li><a href="#" data-subcategory="bath">Банные</a></li>
+                                <li><a href="#" data-subcategory="face">Лицевые</a></li>
+                                <li><a href="#" data-subcategory="hand">Для рук</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link" data-category="curtains">Шторы и карнизы</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link" data-category="carpets">Ковры</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link" data-category="decor">Декор для дома</a>
+                            <ul class="submenu">
+                                <li><a href="#" data-subcategory="pillows">Подушки</a></li>
+                                <li><a href="#" data-subcategory="tablecloths">Скатерти</a></li>
+                                <li><a href="#" data-subcategory="napkins">Салфетки</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </aside>
+
+                <!-- Products Grid -->
+                <main class="catalog-content">
+                    <div class="products-grid">
+                        <div class="product-card" data-category="bed-linen">
+                            <a href="product.html" class="product-link">
+                                <div class="product-image">
+                                    <img src="https://via.placeholder.com/300x300/e8d5c4/ffffff?text=Постельное+белье" alt="Постельное белье">
+                                    <div class="product-overlay">
+                                        <span class="view-product">Подробнее</span>
+                                    </div>
+                                </div>
+                                <h3>Комплект постельного белья</h3>
+                                <p class="price">1 500 ₽</p>
+                            </a>
+                            <button class="btn btn-add-catalog" data-product-id="1" data-product-name="Комплект постельного белья" data-product-price="1500" data-product-image="https://via.placeholder.com/300x300/e8d5c4/ffffff?text=Постельное+белье">Добавить в корзину</button>
+                        </div>
+                        <div class="product-card" data-category="blankets">
+                            <a href="product.html" class="product-link">
+                                <div class="product-image">
+                                    <img src="https://via.placeholder.com/300x300/d4c5b8/ffffff?text=Покрывала+и+пледы" alt="Покрывала и пледы">
+                                    <div class="product-overlay">
+                                        <span class="view-product">Подробнее</span>
+                                    </div>
+                                </div>
+                                <h3>Плед шерстяной</h3>
+                                <p class="price">2 300 ₽</p>
+                            </a>
+                            <button class="btn btn-add-catalog" data-product-id="2" data-product-name="Плед шерстяной" data-product-price="2300" data-product-image="https://via.placeholder.com/300x300/d4c5b8/ffffff?text=Покрывала+и+пледы">Добавить в корзину</button>
+                        </div>
+                        <div class="product-card" data-category="towels">
+                            <a href="product.html" class="product-link">
+                                <div class="product-image">
+                                    <img src="https://via.placeholder.com/300x300/c9b8a8/ffffff?text=Полотенца" alt="Полотенца">
+                                    <div class="product-overlay">
+                                        <span class="view-product">Подробнее</span>
+                                    </div>
+                                </div>
+                                <h3>Набор полотенец</h3>
+                                <p class="price">1 800 ₽</p>
+                            </a>
+                            <button class="btn btn-add-catalog" data-product-id="3" data-product-name="Набор полотенец" data-product-price="1800" data-product-image="https://via.placeholder.com/300x300/c9b8a8/ffffff?text=Полотенца">Добавить в корзину</button>
+                        </div>
+                        <div class="product-card" data-category="curtains">
+                            <a href="product.html" class="product-link">
+                                <div class="product-image">
+                                    <img src="https://via.placeholder.com/300x300/b8a898/ffffff?text=Шторы+и+карнизы" alt="Шторы и карнизы">
+                                    <div class="product-overlay">
+                                        <span class="view-product">Подробнее</span>
+                                    </div>
+                                </div>
+                                <h3>Шторы для гостиной</h3>
+                                <p class="price">2 500 ₽</p>
+                            </a>
+                            <button class="btn btn-add-catalog" data-product-id="4" data-product-name="Шторы для гостиной" data-product-price="2500" data-product-image="https://via.placeholder.com/300x300/b8a898/ffffff?text=Шторы+и+карнизы">Добавить в корзину</button>
+                        </div>
+                        <div class="product-card" data-category="carpets">
+                            <a href="product.html" class="product-link">
+                                <div class="product-image">
+                                    <img src="https://via.placeholder.com/300x300/a89888/ffffff?text=Ковры" alt="Ковры">
+                                    <div class="product-overlay">
+                                        <span class="view-product">Подробнее</span>
+                                    </div>
+                                </div>
+                                <h3>Ковер для спальни</h3>
+                                <p class="price">1 200 ₽</p>
+                            </a>
+                            <button class="btn btn-add-catalog" data-product-id="5" data-product-name="Ковер для спальни" data-product-price="1200" data-product-image="https://via.placeholder.com/300x300/a89888/ffffff?text=Ковры">Добавить в корзину</button>
+                        </div>
+                        <div class="product-card" data-category="decor">
+                            <a href="product.html" class="product-link">
+                                <div class="product-image">
+                                    <img src="https://via.placeholder.com/300x300/988878/ffffff?text=Декор+для+дома" alt="Декор для дома">
+                                    <div class="product-overlay">
+                                        <span class="view-product">Подробнее</span>
+                                    </div>
+                                </div>
+                                <h3>Декоративные подушки</h3>
+                                <p class="price">3 000 ₽</p>
+                            </a>
+                            <button class="btn btn-add-catalog" data-product-id="6" data-product-name="Декоративные подушки" data-product-price="3000" data-product-image="https://via.placeholder.com/300x300/988878/ffffff?text=Декор+для+дома">Добавить в корзину</button>
+                        </div>
+                    </div>
+
+                    <!-- No products message -->
+                    <div class="no-products" id="no-products" style="display: none;">
+                        <div class="no-products-icon">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                        </div>
+                        <h3>Товары не найдены</h3>
+                        <p>В этой категории пока нет товаров</p>
+                        <button class="btn btn-primary" onclick="showAllProducts()">Показать все товары</button>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SERNA</h3>
+                    <p class="footer-subtitle">текстиль для дома и отдыха</p>
+                    <p>Качественный текстиль для вашего дома. Создаем уют и комфорт с 2024 года.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Навигация</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#about">О компании</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="index.html#payment">Оплата и Доставка</a></li>
+                        <li><a href="index.html#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Информация</h4>
+                    <ul class="footer-links">
+                        <li><a href="#privacy">Политика конфиденциальности</a></li>
+                        <li><a href="#terms">Условия использования</a></li>
+                        <li><a href="#return">Возврат товара</a></li>
+                        <li><a href="index.html#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p><a href="tel:+79052004400">+7 905 200-44-00</a></p>
+                    <p><a href="mailto:sernatex@rambler.ru">sernatex@rambler.ru</a></p>
+                    <p>г. Санкт-Петербург</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SERNA. Все права защищены.</p>
+                <p class="footer-legal">Использование материалов сайта возможно только с письменного согласия правообладателя.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
